@@ -1,3 +1,4 @@
+
 import cv2
 import streamlit as st
 from ultralytics import YOLO
@@ -39,4 +40,4 @@ if source_vid is not None :
             st_frame.image(result_image, caption= "Detection video" , channels= "BGR")
     else:
         vid_cap.release()
-            break
+        break
